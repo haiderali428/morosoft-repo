@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html , body{
+        line-height: 1.4;
+        font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    
+       color: white;
+
+    }
+     .container {
+    max-width: 1300px;
+    margin: 0 auto;
+} 
+
+    /* navigation bar css */
+    header{
+        display: flex;
+        flex-direction: column;
+       
+        top: 0;
+       background: linear-gradient(to right, rgb(53, 201, 255) 0%, rgb(35, 60, 139) 100%);
+       
+    }
+  nav .navigation{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 60px;
+  }
+
+  .logo a{
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  .btn{
+    margin: 20px;
+    padding: 15px;
+     margin-top: 2px;
+     border: none;
+     
+   }
+   .menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+
+   }
+    
+  .content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 columns grid */
+    gap: 100px; /* Gap between columns */
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+  }
+  
+  .left-content {
+    grid-column: span 8; /* Takes 8 columns */
+    align-self: last baseline;
+  }
+  
+  .right-content {
+    grid-column: span 4; /* Takes 4 columns */
+    
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+   
+   
+  }
+  .search img{
+    width: 50px;
+    height: 50px;
+  }
+  .search input{
+  width: 600px;
+  padding: 20px 10px;
+  font-size: 1rem;
+  border: none;
+
+  }
+  .search i{
+    font-size: 30px;
+    color: #0E1F19;
+    padding: 8px;
+    background-color: white;
+    padding-right: 30px;
+    }
+
+  .left-content h3{
+   align-items: start;
+   margin-bottom: 1.5rem;
+   font-size: 2rem;
+   color: white;
+   font-weight: 200;
+  }
+  .left-content h3 span{
+   
+    font-weight: 600;
+   }
+  
+  .counter {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Gap between tick icon and text */
+    margin-bottom: 20px; /* Space between counters */
+    color: black  ;
+    margin: 20px 10px;
+    
+
+  }
+  
+  .counter img {
+    width: 20px; /* Adjust icon size if needed */
+    height: 20px;
+  }
+  
+  .counter-content p {
+    margin: 0; /* Remove default paragraph margin */
+    
+  }
+  .content-container{
+    width: 300px;
+    background-color:  rgb(53, 201, 255);
+    min-height: 300px;
+    border: 2px solid  rgb(53, 201, 255);
+    border-radius: 10px;
+  }
+
+  .right-content h2{
+    align-items: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+
+  }
+
+  /* .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+  } */
+  .register button{
+    font-size: 1.2rem;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+     margin-left: 60px;
+     margin-bottom: 50px;
+     margin-top: 20px;
+     border-radius: 10px;
+  }
+  .register button :hover{
+   background-color: rgb(53, 201, 255);
+  }
+
+
+  /* Container for the section */
+section {
+    padding: 20px;
+    background-color: #f9f9f9; /* Background color for the section */
+    
+  }
+  
+  /* Container for positions */
+  .container.positions {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 columns grid */
+    gap: 20px; /* Gap between columns */
+  }
+  
+  /* Heading style */
+  .container.positions h1 {
+    grid-column: span 12; /* Full width */
+    text-align: left; /* Align text to the left */
+    font-size: 2.5rem; /* Adjust heading size */
+    margin-bottom: 30px; /* Space below the heading */
+    color: black;
+    margin-top: 100px;
+    font-weight: 200;
+  }
+  .container.positions h1 span {
+    grid-column: span 12; /* Full width */
+    text-align: left; /* Align text to the left */
+    font-size: 2.5rem; /* Adjust heading size */
+    margin-bottom: 30px; /* Space below the heading */
+    color: black;
+    margin-top: 100px;
+    font-weight: 500;
+  }
+
+  
+  /* Individual position content */
+  .position-content {
+    grid-column: span 4; 
+    background-color: #fff; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    align-items: center;
+    text-align: center;
+   
+  }
+  
+  .position-content a {
+   color: rgb(37, 78, 154) ; 
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    display: block; /* Make the link block-level */
+    margin-bottom: 10px; /* Space below the link */
+  }
+  .position-content a:hover{
+    color: rgb(52, 195, 250) ; 
+     text-decoration: none; /* Remove underline */
+     font-size: 1.2rem; /* Adjust font size */
+     font-weight: bold; /* Bold text */
+     display: block; /* Make the link block-level */
+     margin-bottom: 10px; /* Space below the link */
+   }
+
+  
+  .position-content h5 {
+    font-size: 1rem; /* Adjust font size */
+    margin: 10px 0; /* Space above and below */
+    color: #555; /* Text color */
+  }
+  
+  .position-content h3 {
+    font-size: 1rem; /* Adjust font size */
+    margin: 10px 0; /* Space above and below */
+    color: #333; /* Text color */
+    margin-bottom: 30px;
+  }
+  
+  .position-content p {
+    font-size: 0.9rem; /* Adjust font size */
+    color: #302f2f; /* Text color */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .position-content hr{
+    width: 100px;
+    margin: auto;
+  }
+  .position-content hr:hover{
+      color:  rgb(52, 195, 250);
+
+  }
+
+  /* Subscribe container */
+.subscribe {
+    display: flex;
+    justify-content: space-between; /* Justify content with space between */
+    align-items: center;
+    background: linear-gradient(to right, rgb(53, 201, 255) 0%, rgb(35, 60, 139) 100%);
+    /* Background color for the subscribe section */
+    padding: 20px; /* Padding inside the subscribe section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for effect */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  /* Left part of the subscribe section */
+  .sub-left {
+    flex: 1; /* Take available space */
+  }
+  
+  .sub-left h3 {
+    margin: 0 0 10px 0; /* Space below the heading */
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+  
+  .sub-left p {
+    margin: 0; /* Remove default margin */
+    font-size: 1rem; /* Adjust font size */
+    color: #555; /* Text color */
+  }
+  
+  /* Right part of the subscribe section */
+  .sub-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sub-right input {
+    padding: 10px; /* Padding inside the input */
+    font-size: 1rem; /* Font size for the input */
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 4px; /* Rounded corners */
+    margin-right: 20px; /* 20px gap between input and button */
+  }
+  
+  .sub-right .sub-btn {
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1rem; /* Font size for the button */
+    background-color: rgb(52, 195, 250); /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .lower-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+    margin-bottom: -100px;
+    color: black;
+ }
+ 
+
+ .lower-footer .lower-icons{
+    display: flex;
+    gap: 25px; 
+    margin-right: 25px;
+    font-size: 1.2rem;
+ }
+
+ .lower-footer p{
+    margin-left: 25px ;
+    font-size: 1.2rem;
+    
+ }
+
+
+ 
+  
+  
+
+
+
+  /* Responsive Styles */
+@media (max-width: 1150px) {
+    .content {
+      gap: 10px; /* Reduce gap between columns */
+    }
+  
+    .search input {
+      width: 100%; /* Make input full width */
+    }
+
+    .container.positions {
+        gap: 15px; /* Reduce gap between columns */
+      }
+    
+      .position-content {
+        grid-column: span 6; /* Each position content takes 6 columns on medium screens */
+      }
+  }
+  
+  @media (max-width: 900px) {
+    /* .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      
+      .menu.active {
+        display: flex;
+      }
+      
+      .burger {
+        display: block;
+      }
+      
+      .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      
+      .burger.toggle .line2 {
+        opacity: 0;
+      }
+      
+      .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+      } */
+
+      .logo{
+        margin-top: -15px;
+      }
+    .content {
+      grid-template-columns: 1fr; /* Single column layout */
+      gap: 20px;
+    }
+  
+    .left-content, .right-content {
+      grid-column: span 12; /* Full width for both columns */
+    }
+  
+    .search {
+      flex-direction: column; /* Stack search input and icon */
+      align-items: stretch;
+    }
+  
+    .search img {
+      width: 100%; /* Full width for search icon */
+    }
+  
+    .search input {
+      width: 100%; /* Full width for input */
+    }
+  
+    .right-content h2 {
+      font-size: 1.5rem; /* Reduce heading size */
+    }
+    .left-content h3{
+        align-items: center;
+        text-align: center;
+       }
+  
+    .counter {
+      flex-direction: column; /* Stack icon and text vertically */
+      align-items: flex-start;
+    }
+  
+    .counter img {
+      width: 30px; /* Adjust icon size for smaller screens */
+      height: 30px;
+    }
+  
+    .content-container {
+      width: 100%; /* Full width for content container */
+    }
+    .container.positions {
+        gap: 15px; /* Reduce gap between columns */
+      }
+    
+      .position-content {
+        grid-column: span 6; /* Each position content takes 6 columns on medium screens */
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .container.positions {
+        grid-template-columns: 1fr; /* Single column layout on small screens */
+      }
+    
+      .position-content {
+        grid-column: span 12; /* Full width for each position content */
+      }
+    
+      .container.positions h1 {
+        font-size: 2rem; /* Smaller heading size */
+      }
+    
+      .position-content a {
+        font-size: 1rem; /* Smaller font size */
+      }
+    
+      .position-content h5,
+      .position-content h3,
+      .position-content p {
+        font-size: 0.8rem; /* Smaller font size for text */
+      }
+
+      .subscribe {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: stretch; /* Stretch items to fill the container */
+      }
+    
+      .sub-right {
+        margin-top: 20px; /* Space between sub-left and sub-right */
+        flex-direction: column;
+      }
+    
+      .sub-right input {
+        margin-right: 0; /* Remove margin on small screens */
+        margin-bottom: 10px; /* Add margin below the input */
+        width: 100%;
+      }
+    
+      .sub-right .sub-btn {
+        width: 100%; /* Full width for the button */
+      }
+      .lower-footer p {
+        margin: 10px 0;
+    }   
+    .lower-footer{
+        flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navigation{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      
+      padding: 40px;
+    }
+    .logo{
+      margin-bottom: 20px;
+    }
+    .content {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .content-container{
+        width: 250px;
+    }
+    .left-content h3, .right-content h2 {
+      font-size: 1.2rem; /* Smaller font size for headings */
+    }
+  
+    .search img {
+      width: 30px; /* Smaller search icon */
+      height: 30px;
+    }
+  
+    .search input {
+      padding: 10px 5px; /* Reduce padding */
+      font-size: 0.8rem; /* Smaller font size */
+    }
+  
+    .counter img {
+      width: 20px; /* Smaller counter icon */
+      height: 20px;
+    }
+    .register button{
+        width: 80%;
+        margin-left: 25px;
+      }
+  }

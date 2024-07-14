@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!-- <header>
+        <a href=""><span>logo</span></a>
+    </header> 
+    <div class="login">
+        <div class="upper-part">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="password">
+        <a href="" class="btn">LOGIN</a>
+    </div>  
+</div> -->
+
+<div class="login-container">
+    <h2>LOGO</h2>
+    <form action="/login" method="POST">
+        <div class="form-group">
+          
+            <input type="text" id="username" name="username" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+           
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+<div class="lower">
+        <div class="foget">
+           <a href="https://cogent-labs.hirestream.io/accounts/password_reset/">foget password</a>
+        </div>
+        <div class="create-acount">
+           <a href="signup.html">Create new acount</a>
+        </div>    
+       </div>
+       
+       <div class="google-login">
+        <button type="button" onclick="location.href='/auth/google'">Login with Google</button>
+    </div>
+    </div>
+</div>
+
+
+   
+</body>
+</html>

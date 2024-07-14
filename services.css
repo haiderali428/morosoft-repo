@@ -1,0 +1,687 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    line-height: 1.4;
+    font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: white;
+
+}
+
+  /* navigation bar css */
+header{
+    position: sticky;
+    top: 0;
+    margin-top: 50px;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    
+
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+ 
+    .logo a{
+        color: white;
+        text-decoration: none;
+        font-size: 40px;
+        padding: 5px 12px;
+        margin-top: 20px;
+
+    }
+    
+    .nav-menu{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu li{
+        list-style: none;
+
+    }
+
+    .nav-menu li a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        padding: 5px 20px; 
+        margin: 10px;
+      
+
+    }
+
+    .nav-menu li a:hover{
+        text-decoration: underline;
+        background: linear-gradient(to right, #33ccff 0%, #cc33ff 100%);
+        background-clip: text;
+        display: inline;
+        color: transparent;
+        
+
+    }
+
+    .btn{
+        
+        margin: 17px;
+        padding: 10px;
+        color: white;
+        background: linear-gradient(to right, #33ccff 0%, #cc33ff 100%);
+    
+        border-radius: 8px;
+        margin-top: 3px;    
+    }
+
+    .right-nav a{
+        text-decoration: none;
+        font-size: 15px;
+    }
+    
+    
+
+ /* Burger menu styling */
+.burger {
+    display: none;
+    cursor: pointer;
+    margin-bottom: 6px;}
+
+.burger div {
+    width: 50px;
+    height: 3px;
+    background: white;
+    margin: 10px;
+    transition: all 0.3s ease;
+    
+
+}
+
+
+
+nav.active .middle-nav, nav.active .right-nav {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+nav.active .middle-nav ul {
+    flex-direction: column;
+}
+
+nav.active .middle-nav ul li {
+    margin: 10px 0;
+}
+
+nav.active .container {
+    flex-direction: column;
+}
+
+nav.active .right-nav {
+    margin-top: 10px;
+}
+
+
+  /* Hero section styling */
+ .herosection{
+    color: white;
+    display: grid;
+    place-items: center;
+ }
+
+ .title{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    font-weight: 400;
+justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+ }
+ .title h1{
+    font-size: 72px;
+ }
+ .subtitle span{    
+    background: linear-gradient(to right, #33ccff 0%, #cc33ff 100%);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    font-size: 60px;
+ }
+ 
+ .title p{
+    font-size: 20px;
+    text-align: center;
+ }
+
+ 
+    /* 2nd section styling */
+  
+   .service-media{
+    /* background-image: url(https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+    background-image: url( https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    color: white;
+    justify-items: center;
+    display: grid;
+    place-items: center;
+    min-height: 600px;
+    margin-left: 15px;
+    margin-right: 22px;
+   
+   }
+    
+  
+  
+    /* Service section css */
+      .services-section {
+        padding:  0px 24px;
+        text-align: left;
+         color: white;
+        
+         
+        
+    }
+    
+    .services-section .title {
+       
+        align-items: start;
+        line-height: 1.3;
+    }
+    
+    .services-section h1 {
+        font-size: 35px;
+        
+        background: linear-gradient(to right, #33ccff 0%, #cc33ff 100%);
+        background-clip: text;
+        display: inline;
+        color: transparent;
+    }
+    
+    .services-section p {
+        
+        font-size: 30px;
+
+    }
+
+      /* service section cards styling  */
+
+    .card-container{
+        display: flex;
+        gap: 20px;
+        
+        border-radius: 6px;
+    }
+
+    .card{
+       
+       border-radius: 10px;
+       border: 1px solid white;
+       transition: 0.2s ease-in-out; 
+       height: 350px;
+       margin-bottom: 30px;
+
+    }
+    .card:hover{
+       
+       
+        border: 1px solid transparent; /* Set border width and initial color */
+        border-image: linear-gradient(to right, #33ccff, #cc33ff) 1; /* Apply gradient */
+        padding: 10px; /* Optional: adds space inside the element */
+        display: inline-block;
+        border-radius: 10px;
+       
+        transition: 0.2s ease-in-out; 
+ 
+     }
+     .image-container img{
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 20px;
+     }
+
+     .content{
+       padding: 20px;
+     }
+     .content h2{
+        margin-bottom: 10px;
+        
+        
+     }
+     .content p{
+        font-size: 20px;
+       
+        margin: 15px opx;
+        margin-bottom: 20px;
+     }
+    
+  
+
+      /* 2nd about styling */
+
+
+     .about2{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+    
+    .left-about2 {
+        flex: 1;
+        /* Ensures that the image doesn't overflow */
+    }
+    
+    .left-about2 img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        
+    }
+    
+    .right-about2 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        
+        padding: 10px; /* Adjust as needed */
+    }
+
+    .right-about2 h2{
+        padding: 0px 20px;
+        font-size: 50px;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: 10px;
+    } 
+    .right-about2 p{
+        padding-left: 20px;
+
+    }
+    
+
+    .counter{
+
+        display: flex;
+        gap: 25px;
+        margin-top: 15px;
+    }
+
+    .counter h3 img{
+       height: 20px;
+       width: 20px;
+       margin-left: 20px;
+       
+        
+    }
+
+      .counter-content{
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5;
+        gap: 25px;
+      }
+      .counter-content p{
+        font-size: 14px;
+      }
+  
+      /* work section css */
+      .work-section{
+        margin-top: 90px;
+        margin-bottom: 200px;
+
+
+
+      }
+     .work-section, .heading h2{
+        font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 50px;
+      }
+
+      .subheading{
+        background: linear-gradient(to right, #33ccff 0%, #cc33ff 100%);
+        background-clip: text;
+        display: inline;
+        color: transparent;
+      }
+
+   
+    .work-data {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    
+    
+    .work-content {
+       
+         padding: 1.5rem 0; 
+        border-radius: 8px;
+       
+          }
+    
+    .work-content .subheading {
+        display: block;
+        font-size: 3rem;
+        background: linear-gradient(to right, #33ccff 0%, #cc33ff 100%);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+        margin-bottom: 1rem;
+    }
+    
+    .work-content h3 {
+        font-size: 1.5rem;
+        
+        margin-bottom: 0.2rem;
+    }
+    
+    .work-content p {
+        font-size: 1rem;
+        
+        line-height: 1.6;
+    }
+
+      
+ /* footer styling */
+
+     /* Upper footer container styling */
+     .upper-footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 1rem;
+        
+        color: #fff;
+    }
+    
+    .footer-logo {
+        flex: 1;
+        text-align: left;
+    }
+    
+    .footer-logo a {
+        font-size: 1.5rem;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer-logo .explanation {
+        font-size: 0.875rem;
+        color: #ccc;
+        margin-top: 0.5rem;
+    }
+    
+    .footer-list {
+        flex: 1;
+        text-align: left;
+    }
+    
+    .footer-list h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-list ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-list ul li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .footer-list ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.875rem;
+    }
+    
+    .footer-list ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    /* Contact list specific styles */
+    .footer-list ul li img {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.5rem;
+    }
+    
+    .lower-footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        align-items: center;
+        margin-bottom: -100px;
+        
+     }
+     
+    
+     .lower-footer .lower-icons{
+        display: flex;
+        gap: 25px; 
+        margin-right: 15px;
+        font-size: 1.2rem;
+        background: linear-gradient(to right, #33ccff 0%, #cc33ff 100%);
+        background-clip: text;
+        
+        color: transparent;
+     }
+    
+     .lower-footer p{
+        margin-left: 15px ;
+        font-size: 1.2rem;
+        
+     }
+   /* Responsive styling */
+   @media (max-width: 1200px) {
+    .nav-menu li a {
+        font-size: 1.2rem;
+        padding: 5px 10px; 
+    }
+
+    .title h1 {
+        font-size: 50px;
+    }
+
+    .subtitle span {
+        font-size: 40px;
+    }
+
+    .services-section h1 {
+        font-size: 30px;
+    }
+
+    .services-section p {
+        font-size: 24px;
+    }
+    .card-container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    header{
+        position: sticky;
+        top: 0;
+        margin-top: 0px;
+       background-color: rgb(68, 68, 68);
+       margin-bottom: 50px;
+       
+    }
+    .container{
+        width: auto;
+    }
+    .middle-nav, .right-nav {
+        display: none;
+        text-decoration-line: underline;
+        margin-bottom: 10px;
+    }
+    
+    .burger {
+        display: block;
+        margin-top: 30px;
+        position: relative;
+       align-self: self-end;
+       margin-top: -55px;
+    }
+    .logo{
+        display: flex;
+        align-self: center;
+        margin-bottom: 6px;
+    }
+
+    
+
+
+    .title {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .title h1 {
+        font-size: 32px;
+    }
+
+    .subtitle span {
+        font-size: 24px;
+    }
+
+   
+
+    .services-section p {
+        font-size: 18px;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .about2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .counter {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .counter h3 {
+        margin: 0;
+    }
+    .right-about2 h2{
+        font-size: 40px;
+
+    }
+
+    .work-data {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .upper-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .lower-footer p {
+        margin: 10px 0;
+    }   
+    
+}
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 30px;
+    }
+
+    .btn {
+        font-size: 0.875rem;
+        padding: 8px 16px;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .subtitle span {
+        font-size: 20px;
+    }
+
+    .title p {
+        font-size: 18px;
+    }
+
+    .services-section h1 {
+        font-size: 20px;
+    }
+
+    .services-section p {
+        font-size: 18px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+
+    .right-about2 h2 {
+        font-size: 40px;
+    }
+
+    .work-content .subheading {
+        font-size: 2rem;
+    }
+
+    .work-content h3 {
+        font-size: 1rem;
+    }
+
+    .work-content p {
+        font-size: 0.75rem;
+    }
+    footer{
+        margin-left: 5px;
+       }
+        .upper-footer {
+            flex-direction: column;
+            text-align: center;
+            
+        }
+    
+
+    .lower-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lower-footer p {
+        margin: 10px 0;
+    }
+}
